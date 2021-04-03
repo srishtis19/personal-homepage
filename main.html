@@ -48,7 +48,9 @@ a:hover, a:active {
 .column {
   float: left;
   width: 50%;
-  padding:150px;
+  padding-left:150px;
+  padding-right:150px;
+  
 }
 
 .column_2 {
@@ -70,6 +72,11 @@ a:hover, a:active {
   border-style:solid;
   border-color:white;
 }
+
+#result {
+  text-align: center;
+  font-size: 30px;
+}  
 
 </style>
 <head>
@@ -132,32 +139,38 @@ a:hover, a:active {
 
 <div class="Play a Game">
   <h1 style="text-align:center">Rock Paper Scissors</h1>
-  <br>
-  <p id="result" style="align:center"></p>
+  <p id="result" style="text-align:center font-size:30px"></p>
   <div class="row">
-  <div class="column","You">
-    <img src="rock.png" alt="Rock" style="width:100%">
+  <div class="column" >
+    <img id="You" src="rock.png" alt="Rock" style="width:100%">
     <div class="desc">You</div>
   </div>
-  <div class="column","Computer">
-    <img src="rock.png" alt="Rock" style="width:100%">
+  <div class="column">
+    <img id="Computer" src="rock.png" alt="Rock" style="width:100%">
     <div class="desc">Computer</div>
   </div>
   </div>
 
   <div class="row">
   <div class="column_2" style="margin-left:35%;" >
+    <button type="button" onclick="userIn(1)">
     <img src="rock.png" alt="Rock" style="width:100%;">
+    </button>
   </div>
   <div class="column_2">
+    <button type="button" onclick="userIn(2)">
     <img src="paper.png" alt="Paper" style="width:100%">
+    </button>
   </div>
   <div class="column_2">
+    <button type="button" onclick="userIn(3)">
     <img src="scissors.png" alt="Scissors" style="width:100%">
+    </button>
   </div>
   
   </div>
 
+<script src="game.js" ></script>
   
   
 
