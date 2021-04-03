@@ -1,0 +1,22 @@
+
+.topnav {
+  overflow: hidden;
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+  background-color:black;
+  opacity:0.8;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
