@@ -23,6 +23,26 @@ a:hover, a:active {
   text-decoration:underline;
 }
 
+.container {
+  position: relative;
+  font-size:45px;
+}
+
+.intro {
+  position: absolute;
+  top: 5px;
+  padding:20px;
+}
+
+#clock {
+  font-size:70px;
+  border-style:solid;
+  border-color: #9900cc;
+  border-width:5px;
+  text-align: center;  
+  padding: 20px;
+  
+}
 </style>
 <head>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -31,10 +51,48 @@ a:hover, a:active {
 
 <body>
 
+<div class="container">
+ <img src="bence-boros-aKbNRT-PKqQ-unsplash.jpg" style="width:100%; height:500px;">
+
+   <p class="intro">
+      Hi There! Welcome to my Webpage!<br>
+      Hope you're having a great day! <br><br>
+      Scroll down or use the Menu above to navigate your way through the page.
+   </p>
+
+</div>
+
+<br><br>
+<br><br>
+
+<div id="clock"></div>
+
+<br><br>
+<br><br>
+
+
+<script>
+  setInterval(currTime,1000);
+  function currTime(){
+    let time = new Date();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+
+    hour = hour < 10 ? "0" + hour : hour;
+    min = min < 10 ? "0" + min : min;
+    sec = sec < 10 ? "0" + sec : sec;
+
+    document.getElementById("clock").innerHTML= hour + ":" + min + ":" + sec;
+  }
+  currTime();
+</script>
+
+
 <div class="about_me">
   <h1>About Me</h1>
   <p style="font-size:20px"><img src="Srishti Sharma_200070080.jpeg" style="float:right;width:180px;height:200px;margin:0px 100px"><br>
-    Hello! Welcome to my homepage!<br>
+    Hello! <br>
     I'm Srishti,currently a fresher at the <a href="https://www.ee.iitb.ac.in/" target="_blank" > Department of Electrical Engineering, 
     IIT Bombay</a>.My hobbies include binge-watching,gourmandizing(Relax, it's just a fancy word for over-eating xD) and
     messing my sleep cycle subsequently.
