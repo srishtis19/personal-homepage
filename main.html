@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="clock.css">
+<link rel="stylesheet" href="game.css">
+
 <style>
 * {
   font-family:Arial;
@@ -15,7 +19,6 @@ body {
   background-size: cover;
 }
 
-
 a:link, a:visited {
   color:#0066cc;
   text-decoration:none;
@@ -26,67 +29,14 @@ a:hover, a:active {
   text-decoration:underline;
 }
 
-.container {
-  margin-top:50px;
-  position: relative;
-  font-size:45px;
-}
-
-.intro {
-  position: absolute;
-  top: 5px;
-  padding:20px;
-}
-
-#clock {
-  font-size:70px;
-  border-style:solid;
-  border-color: #9900cc;
-  border-width:5px;
-  padding: 20px;
-  display: inline;
-  text-align: center;
-  margin:35%;
-  
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding-left:150px;
-  padding-right:150px;
-  
-}
-
-.column_2 {
-  float: left;
-  width: 10%;
-  padding:10px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.desc {
-  padding: 20px;
-  text-align: center;
-  font-size: 30px;
-  border-style:solid;
-  border-color:white;
-}
-
-#result {
-  text-align: center;
-  font-size: 30px;
-}  
-
 </style>
+
 <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <title>Srishti's Webpage</title>
+
 </head>
 
 <body>
@@ -141,16 +91,17 @@ a:hover, a:active {
   <p style="font-size:30px"><img src="Srishti Sharma_200070080.jpeg" style="float:right;width:180px;height:200px;margin:0px 100px"><br>
     Hello! <br>
     I'm Srishti,currently a fresher at the <a href="https://www.ee.iitb.ac.in/" target="_blank" > Department of Electrical Engineering, 
-    IIT Bombay</a>.My hobbies include binge-watching,gourmandizing(Relax, it's just a fancy word for over-eating xD) and
-    messing my sleep cycle subsequently.
+    IIT Bombay</a>.My hobbies include listening to music,coding, blah,blah.I also love lazing around (who doesn't?)and the line you are
+    currently reading was written just to make the paragraph look fuller.
   </p>
   
 </div>
 
-<br><br><br><br><br>
-<br><br><br><br><br>
+<br><br>
+<br><br>
 
 <div id="playAGame">
+
   <h1 style="text-align:center;font-size:40px">Rock Paper Scissors</h1>
   <p id="result" style="text-align:center font-size:30px"></p>
   <div class="row">
@@ -162,9 +113,11 @@ a:hover, a:active {
     <img id="Computer" src="rock.png" alt="Rock" style="width:100%">
     <div class="desc">Computer</div>
   </div>
+
   </div>
 
   <div class="row">
+
   <div class="column_2" style="margin-left:35%;" >
     <button type="button" onclick="userIn(1)">
     <img src="rock.png" alt="Rock" style="width:100%;">
